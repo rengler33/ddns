@@ -1,0 +1,4 @@
+[cloudflare]
+zone_id = ""
+dns_record_id = ""  # dns record to update
+api_key = ""  # account token

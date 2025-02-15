@@ -1,3 +1,6 @@
+config.toml
+last_ip.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

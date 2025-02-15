@@ -1,0 +1,22 @@
+meta {
+  name: update dns record
+  type: http
+  seq: 3
+}
+
+patch {
+  url: https://api.cloudflare.com/client/v4/zones/{{ZONE_ID}}/dns_records/{{DNS_RECORD_ID}}
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{API_KEY}}
+}
+
+body:json {
+  {
+    "content": "6.6.6.6"
+  }
+}
