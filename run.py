@@ -140,10 +140,10 @@ def update_cloudflare_record_ip(ip, cloudflare_config):
 
 
 def main():
-    config_path = Path("config.toml")
+    config_path = Path(__file__).parent / "config.toml"
     config = load_config(config_path)
 
-    last_ip_path = Path("last_ip.txt")
+    last_ip_path = Path(__file__).parent / "last_ip.txt"
     last_ip = load_last_ip(last_ip_path)
 
     ip = get_current_ip()
